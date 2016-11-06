@@ -6,25 +6,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
     <nav>
      <div class="nav-wrapper">
        <!-- <a href="#" class="brand-logo">Logo</a> -->
        <ul id="nav-mobile" class="right hide-on-med-and-down">
-         <li><a href="">Train Details</a></li>
-         <li><a href="#">PNR Detail</a></li>
+         <li><a href="">Bus Details</a></li>
+         <li><a href="#">Hotel Detail</a></li>
        </ul>
      </div>
    </nav>
-   <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="City Name" id="fromCity" type="text" class="validate">
-          <label for="fromCity">Destination</label>
-        </div>
-  </div>
+   <div id="loader" class="section center hide">
+       <div class="preloader-wrapper big active">
+     <div class="spinner-layer spinner-red-only">
+       <div class="circle-clipper left">
+         <div class="circle"></div>
+       </div><div class="gap-patch">
+         <div class="circle"></div>
+       </div><div class="circle-clipper right">
+         <div class="circle"></div>
+       </div>
+     </div>
+ </div>
+ </div>
+   <div id="fullContent"  >
+
+     <div id="detailOfBus" class="row section center container">
+       <form class="col s12">
+         <div class="row">
+           <div class="input-field col s6">
+             <input placeholder="City Name" id="toCity" type="text" class="validate">
+             <label for="fromCity">Desitnation</label>
+           </div>
+           <div class="input-field col s6">
+             <input placeholder="City Name" id="FromCity" type="text" class="validate">
+             <label id="fromLabel" for="fromCity">From</label>
+           </div>
+         </div>
+       </form>
+     </div>
+
+     <div  class="container">
+       <div  class="row section center ">
+         <form class="col s12">
+           <div class="row">
+             <div id="dateOfBus"class="input-field col s6">
+               <input type="date" class="datepicker">
+               <label id="fromLabel" for="fromCity">Date Of Jounery</label>
+             </div>
+             <div >
+               <a id="sumbitDetOfBus" class="btn waves-effect waves-light" href="#">Submit
+                 <i class="material-icons right">send</i>
+               </a>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div id="detTable" class=" hide container">
+     <h1 id="nameforfrom"></h1>
+     <table>
+         <thead>
+           <tr>
+             <th data-field="id">S.No</th>
+               <th data-field="id">Traveler's Name</th>
+               <th data-field="name">Departure
+                 Time </th>
+               <th data-field="price">Duration Time</th>
+               <th data-field="price">Price Of One ticket</th>
+               <th data-field="price">No.of Seats left</th>
+           </tr>
+         </thead>
+
+         <tbody>
+
+         </tbody>
+       </table>
+   </div>
+   <div id="YOURWISH" class="hide">
+     <a id="SEARCHANOTHER" class="btn waves-effect waves-light" href="#">Home
+       <i class="material-icons right">send</i>
+     </a>
+   </div>
+    <div class="container">
+      <div id="fullDetOfTheBus">
+        <!-- <h2 id="FULLBUSNAME">h</h2>
+        <p id="DURATION">e</p>
+        <p id="DEPTIME">l</p>
+        <p id="ARRTIME">oddx</p>
+        <p id="FARE">vdxv</p>
+        <p id="FEAT">xvdvds</p>
+        <p id="BUSNAME">fdbfb</p>
+        <p id="SEAT">bdfbd</p> -->
+
+    </div>
+
+
+   </div>
 
 
 
+
+
+
+   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+   <script src="js/pre.js" charset="utf-8"></script>
+   <!-- <script src="js/mustache.min.js" charset="utf-8"></script> -->
+   <script src="js/app.js" charset="utf-8"></script>
   </body>
 </html>

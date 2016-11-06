@@ -1,0 +1,12 @@
+for(i = 0;i<data.data.onwardflights.length;i++){
+  busName[i] = data.data.onwardflights[i].BusType;
+  duration[i] = data.data.onwardflights[i].duration;
+  depTime[i] = data.data.onwardflights[i].DepartureTime;
+  busFare[i] = data.data.onwardflights[i].fare.totalfare;
+  busfeat[i] = data.data.onwardflights[i].amenities;
+  CompName[i] = data.data.onwardflights[i].TravelsName;
+  arrTime[i] = data.data.onwardflights[i].arrdate;
+  FullBusName[i] = data.data.onwardflights[i].ugcid;
+  seatAvi[i] = data.data.onwardflights[i].RouteSeatTypeDetail.list[0].SeatsAvailable;
+
+}

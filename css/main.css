@@ -1,0 +1,26 @@
+#detailOfBus {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  #detailOfBus input {
+    position: relative; }
+  #detailOfBus label {
+    position: absolute;
+    left: -15.4em;
+    top: 1em; }
+  #detailOfBus #fromLabel {
+    left: -16.8em; }
+
+#dateOfBus {
+  padding-top: 0; }
+
+#sumbitDetOfBus {
+  position: relative;
+  top: 1.6em;
+  right: 9.5em; }
+
+#YOURWISH {
+  position: fixed;
+  top: 4.4em;
+  right: 0; }
+
+/*# sourceMappingURL=main.css.map */
